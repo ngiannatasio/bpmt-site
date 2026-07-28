@@ -408,6 +408,164 @@ section h2 {
   margin: 0 0 18px;
 }
 
+/* ===== Review article pages ===== */
+.review-page {
+  padding: 76px 0 96px;
+}
+
+.review-wrap {
+  max-width: 74ch;
+}
+
+.review-page h1 {
+  font-size: clamp(2rem, 3.4vw, 2.7rem);
+  line-height: 1.15;
+  margin: 0 0 14px;
+}
+
+.review-byline {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--slate);
+  margin: 0 0 28px;
+}
+
+.review-lede {
+  font-size: 1.12rem;
+  color: var(--ink);
+  line-height: 1.65;
+  margin: 0 0 36px;
+}
+
+.verdict-card {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  background: var(--ink);
+  border-radius: 8px;
+  padding: 30px 32px;
+  margin: 0 0 44px;
+}
+
+.verdict-score {
+  display: flex;
+  align-items: baseline;
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+}
+
+.verdict-score-num {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.verdict-score-max {
+  font-size: 1.1rem;
+  color: rgba(238, 241, 238, 0.5);
+}
+
+.verdict-copy h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--copper);
+  margin: 0 0 8px;
+}
+
+.verdict-copy p {
+  color: rgba(238, 241, 238, 0.8);
+  font-size: 0.96rem;
+  margin: 0;
+}
+
+.review-page h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin: 44px 0 16px;
+  color: var(--ink);
+}
+
+.review-page h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin: 0 0 12px;
+  color: var(--ink);
+}
+
+.review-page p {
+  color: var(--slate);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0 0 16px;
+}
+
+.pros-cons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 8px 0 12px;
+}
+
+.pros-col, .cons-col {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.pros-col h3 { color: var(--ledger-green); }
+.cons-col h3 { color: var(--copper-dark); }
+
+.pros-cons ul {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--slate);
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+.pros-cons li { margin-bottom: 10px; }
+.pros-cons li:last-child { margin-bottom: 0; }
+
+.review-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 28px 32px;
+  margin: 40px 0 24px;
+}
+
+.review-cta h3 {
+  margin: 0 0 6px;
+}
+
+.review-cta p {
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+.review-cta .btn {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.review-disclosure {
+  font-size: 0.82rem;
+  color: var(--slate);
+}
+
+@media (max-width: 640px) {
+  .verdict-card { flex-direction: column; align-items: flex-start; }
+  .pros-cons { grid-template-columns: 1fr; }
+  .review-cta { flex-direction: column; align-items: flex-start; }
+}
+
 /* ===== Legal pages ===== */
 .legal-page {
   padding: 76px 0 96px;
