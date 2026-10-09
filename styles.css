@@ -666,3 +666,6 @@ section h2 {
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }
 }
+
+.board-link-soon { opacity: 0.6; border-color: transparent; font-style: italic; cursor: default; }
+.board-link-soon:hover { color: var(--paper-raised); border-color: transparent; }
