@@ -140,9 +140,9 @@
     ['TenantCloud','/tenantcloud-review.html',true,function(n){var c=tier(n,[[10,180],[30,350],[60,600]]);return c===null?{c:1200,from:true,note:'Business plan, quote-based'}:{c:c,note:'Priced by active leases'}}],
     ['Hemlane Basic','/hemlane-review.html',false,function(n){return{c:(28+2*n)*12,note:'Software only; monthly price'}}],
     ['Rentec Direct','/rentec-direct-review.html',true,function(n){return n<=10?{c:300,note:'Starter, up to 10 properties'}:{c:600,from:true,note:'Pro/PM, rises with units'}}],
-    ['DoorLoop','/doorloop-pricing.html',true,function(n){return n<=10?{c:828,note:'Starter, billed yearly'}:(n<=300?{c:1788,note:'Pro, billed yearly'}:{c:1788,from:true,note:'300+ units: request a quote'})},true],
-    ['Buildium Essential','/buildium-alternatives.html',true,function(n){return{c:744,from:true,note:'Starting price; Growth from $192/mo'}}],
-    ['AppFolio','/appfolio-alternatives.html',true,function(n){return n<50?{c:null,note:'50-unit minimum on Core'}:{c:null,note:'Quote only'}}]
+    ['DoorLoop','/doorloop-pricing.html',true,function(n){var f=(n<=100?n*2.5:250+(n-100)*1.5)*12;return{c:null,note:'DoorLoop One from $2.50/unit/mo (about $'+Math.round(f).toLocaleString('en-US')+'/yr at this size) plus a minimum spend DoorLoop does not publish; get a quote'}},true],
+    ['Buildium Essential','/buildium-alternatives.html',true,function(n){return{c:780,from:true,note:'Starting price; Growth from $202/mo'}}],
+    ['AppFolio','/appfolio-alternatives.html',true,function(n){return n<50?{c:null,note:'50-unit minimum on Core'}:{c:1.49*n*12,from:true,note:'Core from $1.49/unit/mo; minimum spend applies'}}]
   ];
   var tb=document.querySelector('#calc-table tbody'),u=document.getElementById('units'),r=document.getElementById('units-range'),a=document.getElementById('need-acct');
   function money(x){return '$'+Math.round(x).toLocaleString('en-US');}
